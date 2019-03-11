@@ -1,0 +1,6 @@
+5.22	Start copying Assignment2.pdf to copy.pdf
+5.27	copy.pdf is copied completely
+8.75	Start copying copy.pdf to a.pdf
+8.79	a.pdf is copied completely
+11.29	Start copying a.pdf to b.pdf
+11.33	b.pdf is copied completely

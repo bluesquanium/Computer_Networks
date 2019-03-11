@@ -1,0 +1,54 @@
+<html>
+<script>
+	function setCookie(id, value, pw, value2) {
+
+        if (value!='' && value2!='') {
+            var date = new Date();
+
+            date.setTime(date.getTime() + (30 * 1000)); //10초
+
+            var expires = "; expires=" + date.toGMTString(); // toGMTString은 GMT 시간으로 표시해줌
+		}
+		else return;
+        document.cookie = id + "=" + value + expires;
+		document.cookie = pw + "=" + value2 + expires;
+		document.cookie = "date="+date.toGMTString() + expires;
+	}
+</script>
+<head>
+<title>
+Login Page
+</title>
+</head>
+<body>
+<center>
+<br><br>
+<form method="post" action="secret.html" name="fr" >
+<table bprder="10">
+<tbody><tr>
+<th colspan="2" align="center"> Enter Your ID and Password </th>
+</tr>
+
+<tr>
+<td> User ID: </td>
+<td> <input type="text" name="User_ID" value=""> </td>
+</tr>
+
+<tr>
+<td> Password: </td>
+<td> <input type="password" name="Password" value=""> </td>
+</tr> 
+
+<tr>
+<td colspan="2">
+	<input type="submit" style="width : 235" value="login" onclick="setCookie('user_id', fr.User_ID.value, 'pw', fr.Password.value)">
+</td>
+</tr>
+
+</tbody></table>
+
+</form>
+
+
+
+</center></body></html>
